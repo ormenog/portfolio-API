@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: portfolio-API
+    env: java
+    buildCommand: chmod +x mvnw && ./mvnw clean package
+    startCommand: java -jar target/portfolio-API-0.0.1-SNAPSHOT.jar
